@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://b8gbfsuofyxj1"]
+[gd_scene load_steps=10 format=4 uid="uid://b8gbfsuofyxj1"]
 
 [ext_resource type="Script" uid="uid://dn8me6vsn8ljo" path="res://player.gd" id="1_112p8"]
 [ext_resource type="Texture2D" uid="uid://y5girywpkm2x" path="res://icon.svg" id="1_j2q8x"]
 [ext_resource type="Texture2D" uid="uid://xnv3jxcpr1vp" path="res://tile.png" id="2_112p8"]
+[ext_resource type="PackedScene" uid="uid://dwiq15j04bsw0" path="res://suscoin.tscn" id="4_e2u21"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2u21"]
 size = Vector2(56, 130)
@@ -221,3 +222,15 @@ position = Vector2(247, 13)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 shape = SubResource("WorldBoundaryShape2D_e2u21")
+
+[node name="suscoin" parent="." instance=ExtResource("4_e2u21")]
+position = Vector2(488, 439)
+
+[node name="suscoin2" parent="." instance=ExtResource("4_e2u21")]
+position = Vector2(696, 223)
+
+[node name="suscoin3" parent="." instance=ExtResource("4_e2u21")]
+position = Vector2(938, 459)
+
+[node name="suscoin4" parent="." instance=ExtResource("4_e2u21")]
+position = Vector2(1135, 139)
